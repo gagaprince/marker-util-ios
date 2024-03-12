@@ -125,8 +125,9 @@ UNI_EXPORT_METHOD_SYNC(@selector(testSyncFunc:))
 UNI_EXPORT_METHOD(@selector(sendRequest:callback:))
 
 - (void)sendRequest:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback {
+    NSLog(@"%@",options);
     NSString *url = options[@"url"];
-    NSString *method = options[@"method"];
+    NSString *method = options[@"method"] ? options[@"method"] : @"GET";
     NSDictionary *headers = options[@"headers"];
     NSString *data = options[@"data"];
     NSNumber *timeout = options[@"timeout"];
