@@ -117,14 +117,22 @@
 		8EED65A0198A5789000A4449 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED659F198A5789000A4449 /* Accounts.framework */; };
 		8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED65A7198A6273000A4449 /* OpenGLES.framework */; };
 		D3FA5FBC52142D805E15DA77 /* Pods_HBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9396B7C02D074E4BE1F6D14C /* Pods_HBuilder.framework */; };
+		DDE3D4712BA06F4D00A340C0 /* MarkerUtilUniPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D46A2BA06AB700A340C0 /* MarkerUtilUniPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DDE3D4632BA0497900A340C0 /* PBXContainerItemProxy */ = {
+		DDE3D4692BA06AB700A340C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4BDA22EE2B50D81700D12E67 /* MarkerUtilUniPlugin.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9759EDBE245048A40076CC51;
+			remoteInfo = MarkerUtilUniPlugin;
+		};
+		DDE3D46E2BA06F0E00A340C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BDA22EE2B50D81700D12E67 /* MarkerUtilUniPlugin.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9759EDBD245048A40076CC51;
 			remoteInfo = MarkerUtilUniPlugin;
 		};
 /* End PBXContainerItemProxy section */
@@ -214,7 +222,7 @@
 		4BC6BEE02B3343A600705FD1 /* DCUniComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniComponent.h; sourceTree = "<group>"; };
 		4BC6BEE12B3343A600705FD1 /* DCUniModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniModule.h; sourceTree = "<group>"; };
 		4BC6BEE22B3343A600705FD1 /* DCUniComponent+Support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCUniComponent+Support.h"; sourceTree = "<group>"; };
-		4BDA22EE2B50D81700D12E67 /* MarkerUtilUniPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarkerUtilUniPlugin.xcodeproj; path = MtchargeUniPlugin/MarkerUtilUniPlugin.xcodeproj; sourceTree = "<group>"; };
+		4BDA22EE2B50D81700D12E67 /* MarkerUtilUniPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarkerUtilUniPlugin.xcodeproj; path = MarkerUtilUniPlugin/MarkerUtilUniPlugin.xcodeproj; sourceTree = "<group>"; };
 		4F4C64532465600B006A13AA /* PDRCoreAppWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCoreAppWindow.h; sourceTree = "<group>"; };
 		4F4C64542465600B006A13AA /* PDRNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRNView.h; sourceTree = "<group>"; };
 		4F4C64552465600B006A13AA /* PDRCommonString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCommonString.h; sourceTree = "<group>"; };
@@ -477,6 +485,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE3D4712BA06F4D00A340C0 /* MarkerUtilUniPlugin.framework in Frameworks */,
 				4B8AD54E2B47F46A00008178 /* liblibPush.a in Frameworks */,
 				4B6F545C2B3415EC00E0EBB5 /* QuartzCore.framework in Frameworks */,
 				4B6F545A2B3415E000E0EBB5 /* Metal.framework in Frameworks */,
@@ -1038,10 +1047,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DDE3D4602BA0497900A340C0 /* Products */ = {
+		DDE3D4662BA06AB700A340C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDE3D4642BA0497900A340C0 /* MarkerUtilUniPlugin.framework */,
+				DDE3D46A2BA06AB700A340C0 /* MarkerUtilUniPlugin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1062,6 +1071,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDE3D46F2BA06F0E00A340C0 /* PBXTargetDependency */,
 			);
 			name = HBuilder;
 			productName = "HBuilder-Hello";
@@ -1102,7 +1112,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DDE3D4602BA0497900A340C0 /* Products */;
+					ProductGroup = DDE3D4662BA06AB700A340C0 /* Products */;
 					ProjectRef = 4BDA22EE2B50D81700D12E67 /* MarkerUtilUniPlugin.xcodeproj */;
 				},
 			);
@@ -1114,11 +1124,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DDE3D4642BA0497900A340C0 /* MarkerUtilUniPlugin.framework */ = {
+		DDE3D46A2BA06AB700A340C0 /* MarkerUtilUniPlugin.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MarkerUtilUniPlugin.framework;
-			remoteRef = DDE3D4632BA0497900A340C0 /* PBXContainerItemProxy */;
+			remoteRef = DDE3D4692BA06AB700A340C0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1191,6 +1201,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDE3D46F2BA06F0E00A340C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarkerUtilUniPlugin;
+			targetProxy = DDE3D46E2BA06F0E00A340C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67E9CDCD22968D2E0076E0FB /* Localizable.strings */ = {
@@ -1313,7 +1331,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mtcharge-iOS/MarkerUtil-Prefix.pch";
+				GCC_PREFIX_HEADER = "MarkerUtil/MarkerUtil-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					PDR_PLUS_MAP,
 					PDR_PLUS_GETUI,
@@ -1324,7 +1342,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../SDK/inc/**",
 				);
-				INFOPLIST_FILE = "Mtcharge-iOS/MarkerUtil-Info.plist";
+				INFOPLIST_FILE = "MarkerUtil/MarkerUtil-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1346,7 +1364,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = markerutil;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "Mtcharge-iOS/HBuilder-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarkerUtil/HBuilder-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1379,7 +1397,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mtcharge-iOS/MarkerUtil-Prefix.pch";
+				GCC_PREFIX_HEADER = "MarkerUtil/MarkerUtil-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					PDR_PLUS_MAP,
 					PDR_PLUS_GETUI,
@@ -1390,7 +1408,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../SDK/inc/**",
 				);
-				INFOPLIST_FILE = "Mtcharge-iOS/MarkerUtil-Info.plist";
+				INFOPLIST_FILE = "MarkerUtil/MarkerUtil-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1412,7 +1430,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = markerutil;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "Mtcharge-iOS/HBuilder-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarkerUtil/HBuilder-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = NO;

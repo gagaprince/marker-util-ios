@@ -17,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C151FBED11CE9146E06FCD3 /* Pods-DCTestUniPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTestUniPlugin.release.xcconfig"; path = "Target Support Files/Pods-DCTestUniPlugin/Pods-DCTestUniPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		4BC6BED12B333BB200705FD1 /* MarkerUtilPluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerUtilPluginConfig.m; sourceTree = "<group>"; };
 		4BC6BED32B333BB200705FD1 /* MarkerUtilPluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerUtilPluginConfig.h; sourceTree = "<group>"; };
 		9756FDC02474031D0059BC12 /* MarkerUtilPluginProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerUtilPluginProxy.h; sourceTree = "<group>"; };
@@ -27,7 +26,6 @@
 		97A515BA2450499200BC028D /* MarkerUtilNativeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerUtilNativeModule.h; sourceTree = "<group>"; };
 		97A515BB2450499200BC028D /* MarkerUtilNativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkerUtilNativeModule.m; sourceTree = "<group>"; };
 		97A515C324518A6C00BC028D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		A84DE8EF5750C33474FBC659 /* Pods-DCTestUniPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTestUniPlugin.debug.xcconfig"; path = "Target Support Files/Pods-DCTestUniPlugin/Pods-DCTestUniPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 				9759EDC0245048A40076CC51 /* MarkerUtilUniPlugin */,
 				9759EDBF245048A40076CC51 /* Products */,
 				97A515C224518A6C00BC028D /* Frameworks */,
-				E1A58316F9381404F99395EA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,16 +87,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E1A58316F9381404F99395EA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A84DE8EF5750C33474FBC659 /* Pods-DCTestUniPlugin.debug.xcconfig */,
-				0C151FBED11CE9146E06FCD3 /* Pods-DCTestUniPlugin.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,7 +107,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9759EDC6245048A40076CC51 /* Build configuration list for PBXNativeTarget "MarkerUtilUniPlugin" */;
 			buildPhases = (
-				EE75ABE1CCA838ED70F05161 /* [CP] Check Pods Manifest.lock */,
 				9759EDB9245048A40076CC51 /* Headers */,
 				9759EDBA245048A40076CC51 /* Sources */,
 				9759EDBB245048A40076CC51 /* Frameworks */,
@@ -177,31 +163,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		EE75ABE1CCA838ED70F05161 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DCTestUniPlugin-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9759EDBA245048A40076CC51 /* Sources */ = {
@@ -335,7 +296,6 @@
 		};
 		9759EDC7245048A40076CC51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A84DE8EF5750C33474FBC659 /* Pods-DCTestUniPlugin.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -346,7 +306,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../SDK/inc\"/**";
-				INFOPLIST_FILE = MtchargeUniPlugin/Info.plist;
+				INFOPLIST_FILE = MarkerUtilUniPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,7 +315,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dcloud.DCTestUniPlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dcloud.MarkerUtil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -366,7 +326,6 @@
 		};
 		9759EDC8245048A40076CC51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C151FBED11CE9146E06FCD3 /* Pods-DCTestUniPlugin.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -377,7 +336,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../SDK/inc\"/**";
-				INFOPLIST_FILE = MtchargeUniPlugin/Info.plist;
+				INFOPLIST_FILE = MarkerUtilUniPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,7 +345,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dcloud.DCTestUniPlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dcloud.MarkerUtil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

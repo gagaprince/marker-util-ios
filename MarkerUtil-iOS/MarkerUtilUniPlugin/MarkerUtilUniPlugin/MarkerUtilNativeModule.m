@@ -122,4 +122,36 @@ UNI_EXPORT_METHOD_SYNC(@selector(testSyncFunc:))
     return @"success";
 }
 
+UNI_EXPORT_METHOD(@selector(sendRequest:callback:))
+
+- (void)sendRequest:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback {
+    NSString *url = options[@"url"];
+    NSString *method = options[@"method"];
+    NSDictionary *headers = options[@"headers"];
+    NSString *data = options[@"data"];
+    NSNumber *timeout = options[@"timeout"];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:[timeout doubleValue]];
+    [request setHTTPMethod:method];
+    for (NSString *headerField in headers) {
+        [request setValue:headers[headerField] forHTTPHeaderField:headerField];
+    }
+    [request setHTTPBody:[data dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            if (callback) {
+                callback(@{@"error": error.localizedDescription}, NO);
+            }
+        } else {
+            NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            if (callback) {
+                callback(@{@"data": dataString}, NO);
+            }
+        }
+    }];
+
+    [dataTask resume];
+}
+
 @end

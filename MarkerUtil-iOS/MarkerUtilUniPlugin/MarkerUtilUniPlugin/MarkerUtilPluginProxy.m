@@ -51,7 +51,7 @@
     NSLog(@"UniPluginProtocol Func: %@,%s",self,__func__);
     NSString * scheme = [url scheme];
     NSLog(@"%@",scheme);
-    if ([scheme isEqual:@"mtcharge"]) {
+    if ([scheme isEqual:@"marker"]) {
         NSArray * arr = [[url absoluteString] componentsSeparatedByString:@"="];
         if(arr[1]){
             NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:arr[1],@"path",nil];

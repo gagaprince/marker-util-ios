@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>Mtcharge</string>
+	<string>markerUtil</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -30,27 +30,15 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>line</string>
+			<string>marker</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>mtcharge</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>mtcharge</string>
+				<string>marker</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>ChannelID</key>
-	<string>2002148634</string>
 	<key>DCLOUD_AD_ID</key>
 	<string>去dcloud官方网站申请对应的值</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
@@ -409,14 +397,14 @@
 	<array>
 		<dict>
 			<key>hooksClass</key>
-			<string>MtchargePluginProxy</string>
+			<string>MarkerUtilPluginProxy</string>
 			<key>plugins</key>
 			<array>
 				<dict>
 					<key>class</key>
-					<string>MtchargeNativeModule</string>
+					<string>MarkerUtilNativeModule</string>
 					<key>name</key>
-					<string>MtchargeUniPlugin-MtchargeNativeModule</string>
+					<string>MarkerUtilUniPlugin-MarkerUtilNativeModule</string>
 					<key>type</key>
 					<string>module</string>
 				</dict>

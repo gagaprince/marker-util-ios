@@ -13,9 +13,8 @@
 #import "PDRCoreApp.h"
 #import "PDRCoreAppManager.h"
 
-#import <MtchargeUniPlugin/MtchargeUniPlugin-Swift.h>
-#import <MtchargeUniPlugin/MtchargePluginConfig.h>
-#import <MtchargeUniPlugin/MtchargeNativeModule.h>
+#import <MarkerUtilUniPlugin/MarkerUtilPluginConfig.h>
+#import <MarkerUtilUniPlugin/MarkerUtilNativeModule.h>
 
 #import <UserNotifications/UserNotifications.h>
 
