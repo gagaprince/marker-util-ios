@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '13.0'
+
+workspace 'MarkerUtil.xcworkspace'
+project 'MarkerUtil.xcodeproj'
+target 'HBuilder' do
+
+  use_frameworks!
+  # Pods for HBuilder
+  # pod 'LineSDKSwift', '~> 5.0'
+
+end
+
+# 关闭bitcode
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
+end
