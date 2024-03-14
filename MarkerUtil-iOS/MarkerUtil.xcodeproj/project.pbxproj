@@ -118,6 +118,11 @@
 		8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED65A7198A6273000A4449 /* OpenGLES.framework */; };
 		D3FA5FBC52142D805E15DA77 /* Pods_HBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9396B7C02D074E4BE1F6D14C /* Pods_HBuilder.framework */; };
 		DDE3D4712BA06F4D00A340C0 /* MarkerUtilUniPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D46A2BA06AB700A340C0 /* MarkerUtilUniPlugin.framework */; };
+		DDE3D4882BA2F4A300A340C0 /* X-Bogus.js in Resources */ = {isa = PBXBuildFile; fileRef = DDE3D4872BA2F4A300A340C0 /* X-Bogus.js */; };
+		DDE3D48A2BA301BF00A340C0 /* liblibVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D4892BA301BF00A340C0 /* liblibVideo.a */; };
+		DDE3D48B2BA3024900A340C0 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
+		DDE3D48D2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D48C2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework */; };
+		DDE3D48F2BA3084400A340C0 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D48E2BA3084300A340C0 /* Masonry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -478,6 +483,10 @@
 		8EED65A5198A626B000A4449 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8EED65A7198A6273000A4449 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9396B7C02D074E4BE1F6D14C /* Pods_HBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE3D4872BA2F4A300A340C0 /* X-Bogus.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "X-Bogus.js"; path = "MarkerUtilUniPlugin/MarkerUtilUniPlugin/jsfile/X-Bogus.js"; sourceTree = "<group>"; };
+		DDE3D4892BA301BF00A340C0 /* liblibVideo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibVideo.a; path = ../SDK/Libs/liblibVideo.a; sourceTree = "<group>"; };
+		DDE3D48C2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFrameworkWithSSL.framework; path = ../SDK/Libs/IJKMediaFrameworkWithSSL.framework; sourceTree = "<group>"; };
+		DDE3D48E2BA3084300A340C0 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = ../SDK/Libs/Masonry.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +494,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE3D48F2BA3084400A340C0 /* Masonry.framework in Frameworks */,
+				DDE3D48D2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework in Frameworks */,
+				DDE3D48B2BA3024900A340C0 /* DCUniVideoPublic.framework in Frameworks */,
+				DDE3D48A2BA301BF00A340C0 /* liblibVideo.a in Frameworks */,
+				8EED6420198A2668000A4449 /* MediaPlayer.framework in Frameworks */,
 				DDE3D4712BA06F4D00A340C0 /* MarkerUtilUniPlugin.framework in Frameworks */,
 				4B8AD54E2B47F46A00008178 /* liblibPush.a in Frameworks */,
 				4B6F545C2B3415EC00E0EBB5 /* QuartzCore.framework in Frameworks */,
@@ -566,7 +580,6 @@
 				8EED659C198A5773000A4449 /* AddressBookUI.framework in Frameworks */,
 				8EED6592198A5737000A4449 /* AddressBook.framework in Frameworks */,
 				8EED6422198A2678000A4449 /* AudioToolbox.framework in Frameworks */,
-				8EED6420198A2668000A4449 /* MediaPlayer.framework in Frameworks */,
 				8EED641E198A265F000A4449 /* CoreTelephony.framework in Frameworks */,
 				8EED6416198A2635000A4449 /* CoreVideo.framework in Frameworks */,
 				8EED6414198A262C000A4449 /* CoreMedia.framework in Frameworks */,
@@ -880,6 +893,7 @@
 		8EED628F198A1D13000A4449 = {
 			isa = PBXGroup;
 			children = (
+				DDE3D4872BA2F4A300A340C0 /* X-Bogus.js */,
 				4BDA22EE2B50D81700D12E67 /* MarkerUtilUniPlugin.xcodeproj */,
 				4B6F545D2B34163700E0EBB5 /* GoogleMaps.bundle */,
 				6731F399232F4F03007838BC /* HBuilder.entitlements */,
@@ -901,6 +915,9 @@
 		8EED629A198A1D13000A4449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDE3D48E2BA3084300A340C0 /* Masonry.framework */,
+				DDE3D48C2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework */,
+				DDE3D4892BA301BF00A340C0 /* liblibVideo.a */,
 				4B8AD54D2B47F46A00008178 /* liblibPush.a */,
 				4B6F545B2B3415EC00E0EBB5 /* QuartzCore.framework */,
 				4B6F54592B3415E000E0EBB5 /* Metal.framework */,
@@ -1138,6 +1155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE3D4882BA2F4A300A340C0 /* X-Bogus.js in Resources */,
 				4B6F545E2B34163700E0EBB5 /* GoogleMaps.bundle in Resources */,
 				4F52A30425E8DEDD00405116 /* DCTZImagePickerController.bundle in Resources */,
 				4F4C65462465606C006A13AA /* PandoraApi.bundle in Resources */,

@@ -12,9 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MarkerUtilNativeModule : DCUniModule <WXModuleProtocol>
+@interface MarkerUtilNativeModule : DCUniModule <WXModuleProtocol, NSURLSessionDelegate>
 
 @property (nonatomic, strong) DCUniSDKInstance * js_uniInstance;
+@property (nonatomic, strong) NSNumber *followRedirects;
 
 + (MarkerUtilNativeModule *)sharedSingleton;
 

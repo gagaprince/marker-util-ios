@@ -14,6 +14,7 @@
 		97A515BC2450499200BC028D /* MarkerUtilNativeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A515BA2450499200BC028D /* MarkerUtilNativeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97A515BD2450499200BC028D /* MarkerUtilNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A515BB2450499200BC028D /* MarkerUtilNativeModule.m */; };
 		97A515C424518A6C00BC028D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A515C324518A6C00BC028D /* MapKit.framework */; };
+		DDE3D4842BA2F28200A340C0 /* X-Bogus.js in Resources */ = {isa = PBXBuildFile; fileRef = DDE3D4832BA2F28200A340C0 /* X-Bogus.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		97A515BA2450499200BC028D /* MarkerUtilNativeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerUtilNativeModule.h; sourceTree = "<group>"; };
 		97A515BB2450499200BC028D /* MarkerUtilNativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkerUtilNativeModule.m; sourceTree = "<group>"; };
 		97A515C324518A6C00BC028D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		DDE3D4832BA2F28200A340C0 /* X-Bogus.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "X-Bogus.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		9759EDC0245048A40076CC51 /* MarkerUtilUniPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				DDE3D47F2BA2F20A00A340C0 /* jsfile */,
 				4BC6BED02B333B7200705FD1 /* Controller */,
 				9759EDC2245048A40076CC51 /* Info.plist */,
 				97A515BA2450499200BC028D /* MarkerUtilNativeModule.h */,
@@ -85,6 +88,14 @@
 				97A515C324518A6C00BC028D /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDE3D47F2BA2F20A00A340C0 /* jsfile */ = {
+			isa = PBXGroup;
+			children = (
+				DDE3D4832BA2F28200A340C0 /* X-Bogus.js */,
+			);
+			path = jsfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE3D4842BA2F28200A340C0 /* X-Bogus.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
