@@ -417,6 +417,6 @@
 		<string>AIzaSyB-Mpvyu-Rehv2B_9yt7_8ma3Hpfp0O32U</string>
 	</dict>
 	<key>marketChannel</key>
-	<string>按照文档格式配置对应的值</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)|__UNI__EE8781D||apple</string>
 </dict>
 </plist>
