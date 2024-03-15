@@ -123,6 +123,8 @@
 		DDE3D48B2BA3024900A340C0 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
 		DDE3D48D2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D48C2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework */; };
 		DDE3D48F2BA3084400A340C0 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D48E2BA3084300A340C0 /* Masonry.framework */; };
+		DDE3D4942BA4548D00A340C0 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D4932BA4548D00A340C0 /* MetalKit.framework */; };
+		DDE3D4952BA454B100A340C0 /* liblibCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD8121CB50C3F00C0F062 /* liblibCamera.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -487,6 +489,7 @@
 		DDE3D4892BA301BF00A340C0 /* liblibVideo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibVideo.a; path = ../SDK/Libs/liblibVideo.a; sourceTree = "<group>"; };
 		DDE3D48C2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFrameworkWithSSL.framework; path = ../SDK/Libs/IJKMediaFrameworkWithSSL.framework; sourceTree = "<group>"; };
 		DDE3D48E2BA3084300A340C0 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = ../SDK/Libs/Masonry.framework; sourceTree = "<group>"; };
+		DDE3D4932BA4548D00A340C0 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +497,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE3D4952BA454B100A340C0 /* liblibCamera.a in Frameworks */,
 				DDE3D48F2BA3084400A340C0 /* Masonry.framework in Frameworks */,
 				DDE3D48D2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework in Frameworks */,
 				DDE3D48B2BA3024900A340C0 /* DCUniVideoPublic.framework in Frameworks */,
@@ -563,6 +567,7 @@
 				8EED629E198A1D13000A4449 /* CoreGraphics.framework in Frameworks */,
 				8EED629C198A1D13000A4449 /* Foundation.framework in Frameworks */,
 				8EED62A0198A1D13000A4449 /* UIKit.framework in Frameworks */,
+				DDE3D4942BA4548D00A340C0 /* MetalKit.framework in Frameworks */,
 				24A7515F1D9CCCC600C8B0F9 /* QuickLook.framework in Frameworks */,
 				242725CD1D26686700EBD79E /* CoreMotion.framework in Frameworks */,
 				7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */,
@@ -915,6 +920,7 @@
 		8EED629A198A1D13000A4449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDE3D4932BA4548D00A340C0 /* MetalKit.framework */,
 				DDE3D48E2BA3084300A340C0 /* Masonry.framework */,
 				DDE3D48C2BA3026B00A340C0 /* IJKMediaFrameworkWithSSL.framework */,
 				DDE3D4892BA301BF00A340C0 /* liblibVideo.a */,

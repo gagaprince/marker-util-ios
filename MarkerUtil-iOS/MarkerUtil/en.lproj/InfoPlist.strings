@@ -1,2 +1,6 @@
 /* Localized versions of Info.plist keys */
 CFBundleDisplayName="marker util";
+NSUserTrackingUsageDescription="Rest assured, enabling this permission will not access your private information on other sites. This permission is only used to identify the device and ensure service security and browsing experience.";
+NSLocationWhenInUseDescription="We need access to your location information to provide better services.";
+NSLocationWhenInUseUsageDescription="We need access to your location information to provide better services.";
+NSBluetoothAlwaysUsageDescription="We need to access your Bluetooth function to provide better service.";
