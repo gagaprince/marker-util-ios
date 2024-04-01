@@ -165,7 +165,7 @@ UNI_EXPORT_METHOD(@selector(sendRequest:callback:))
 }
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task willPerformHTTPRedirection:(NSHTTPURLResponse *)response newRequest:(NSURLRequest *)request completionHandler:(void (^)(NSURLRequest * _Nullable))completionHandler {
-    if ([response statusCode] == 302 && ![self.followRedirects boolValue]) {
+    if (([response statusCode] == 302 || [response statusCode] == 301) && ![self.followRedirects boolValue]) {
         completionHandler(nil);
     } else {
         completionHandler(request);
